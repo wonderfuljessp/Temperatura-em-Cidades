@@ -1,0 +1,36 @@
+<style>
+    body { 
+        background-color: lightblue; 
+    }
+</style>
+
+<body>
+    <input type="text" id="cidade" placeholder="Digite o nome da cidade">
+    <button id="botao-busca">Buscar</button>
+    <p id="temperatura"></p>
+    <h2 id="nome-cidade"></h2>
+    <script>
+  const botao = document.getElementById("botao-busca");
+  const inputCidade = document.getElementById("cidade");
+  const elementoTemperatura = document.getElementById("temperatura");
+  const elementoCidade = document.getElementById("nome-cidade");
+
+  async function buscarClima() {
+    const resposta = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputCidade.value + "&appid=SUACHAVEDEAPI");
+    const dados = await resposta.json();
+    elementoTemperatura.textContent = dados.main.temp + "ºC";
+    elementoCidade.textContent = dados.name;
+    inputCidade.value = "";
+}
+
+ botao.addEventListener("click", function() {
+   buscarClima();
+});
+
+inputCidade.addEventListener("keypress", async function(event) {
+    if (event.key === "Enter") {
+       buscarClima();
+    }
+});
+</script>
+</body>
