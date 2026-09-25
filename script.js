@@ -17,7 +17,7 @@ const elementoHora = document.getElementById("hora-local");
     elementoIcone.src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + "@2x.png";
     const tempoLocalMs = Date.now() + (dados.timezone * 1000);
 const dataLocal = new Date(tempoLocalMs);
-const horarioFormatado = dataLocal.toLocaleTimeString("pt-BR", { timeZone: "UTC" });
+const horarioFormatado = dataLocal.toLocaleTimeString("pt-BR", { timeZone: "UTC", hour: '2-digit', minute: '2-digit'});
     elementoHora.textContent = "Hora local: " + horarioFormatado;
     inputCidade.value = "";
 }
