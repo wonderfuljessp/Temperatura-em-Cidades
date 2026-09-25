@@ -4,3 +4,13 @@
         text-align: center;
 
     }
+
+#temperatura {
+    font-size: 50px;
+}
+
+#cidade, #botao-busca {
+    border-radius: 10px; 
+    padding: 10px;
+    border: none;
+}
