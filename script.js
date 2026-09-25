@@ -13,6 +13,7 @@ const elementoIcone = document.getElementById("icone-clima");
     elementoCidade.textContent = dados.name;
     const descricaoCapitalizada = dados.weather[0].description.charAt(0).toUpperCase() + dados.weather[0].description.slice(1);
     elementoDescricao.textContent = descricaoCapitalizada;
+    elementoIcone.src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + "@2x.png";
     inputCidade.value = "";
 }
 
