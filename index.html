@@ -8,32 +8,8 @@
     <p id="temperatura"></p>
     <h2 id="nome-cidade"></h2>
     <h2 id="descricao"></h2>
-    <script>
-  const botao = document.getElementById("botao-busca");
-  const inputCidade = document.getElementById("cidade");
-  const elementoTemperatura = document.getElementById("temperatura");
-  const elementoCidade = document.getElementById("nome-cidade");
-const elementoDescricao = document.getElementById("descricao");
-
-  async function buscarClima() {
-    const resposta = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputCidade.value + "&appid=" + CHAVE_API + "&lang=pt_br");
-    const dados = await resposta.json();
-    elementoTemperatura.textContent = Math.round((dados.main.temp - 273.15)) + "ºC";
-    elementoCidade.textContent = dados.name;
-    elementoDescricao.textContent = dados.weather[0].description;
-    inputCidade.value = "";
-}
-
- botao.addEventListener("click", function() {
-   buscarClima();
-});
-
-inputCidade.addEventListener("keypress", async function(event) {
-    if (event.key === "Enter") {
-       buscarClima();
-    }
-});
-</script>
+    <img id="icone-clima" src="">
+   
 <script src="config.js"></script>
 <script src="script.js"></script>
 </body>
