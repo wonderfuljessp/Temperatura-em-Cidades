@@ -1,4 +1,4 @@
- <script>
+
   const botao = document.getElementById("botao-busca");
   const inputCidade = document.getElementById("cidade");
   const elementoTemperatura = document.getElementById("temperatura");
@@ -25,4 +25,3 @@ inputCidade.addEventListener("keypress", async function(event) {
        buscarClima();
     }
 });
-</script>
