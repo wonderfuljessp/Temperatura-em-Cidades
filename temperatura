@@ -18,7 +18,7 @@
   async function buscarClima() {
     const resposta = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputCidade.value + "&appid=SUACHAVEDEAPI");
     const dados = await resposta.json();
-    elementoTemperatura.textContent = dados.main.temp + "ºC";
+   elementoTemperatura.textContent = Math.round((dados.main.temp - 273.15)) + "ºC";
     elementoCidade.textContent = dados.name;
     inputCidade.value = "";
 }
