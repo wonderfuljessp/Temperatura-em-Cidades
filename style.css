@@ -21,10 +21,13 @@
     border-radius: 10px;
     display: flex;
     padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 #temperatura {
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 30px;
 }
 

@@ -17,6 +17,8 @@ const elementoVento = document.getElementById("vento");
         elementoDescricao.textContent = "";
         elementoHora.textContent = ""; 
         elementoIcone.src = "";
+        elementoUmidade.textContent = "";
+        elementovento.textContent = "";
         document.body.classList.remove("temanoite");
        document.body.classList.add("temadia")
       return false;
