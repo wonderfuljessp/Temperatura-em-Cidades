@@ -12,10 +12,10 @@ const elementoHora = document.getElementById("hora-local");
     const dados = await resposta.json();
     if(resposta.ok === false) {
         elementoTemperatura.textContent = "Cidade não encontrada";
-        elementocidade.textContent = "";
+        elementoCidade.textContent = "";
         elementoDescricao.textContent = "";
-        elementohora.textContent = ""; 
-        elementoicone.src = "";
+        elementoHora.textContent = ""; 
+        elementoIcone.src = "";
       return false;
     }
     elementoTemperatura.textContent = Math.round((dados.main.temp - 273.15)) + "ºC";
