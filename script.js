@@ -6,6 +6,7 @@
 const elementoDescricao = document.getElementById("descricao");
 const elementoIcone = document.getElementById("icone-clima");
 const elementoHora = document.getElementById("hora-local");
+const elementoUmidade = document.getElementById("umidade");
 
   async function buscarClima() {
     const resposta = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputCidade.value + "&appid=" + CHAVE_API + "&lang=pt_br");
@@ -37,6 +38,7 @@ const elementoHora = document.getElementById("hora-local");
 const dataLocal = new Date(tempoLocalMs);
 const horarioFormatado = dataLocal.toLocaleTimeString("pt-BR", { timeZone: "UTC", hour: '2-digit', minute: '2-digit'});
     elementoHora.textContent = "Hora local: " + horarioFormatado;
+    elementoUmidade.textContent = "Umidade do ar: " + dados.main.humidity + "%";
     inputCidade.value = "";
 }
 
