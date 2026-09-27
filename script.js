@@ -15,6 +15,8 @@ const elementoHora = document.getElementById("hora-local");
         elementoDescricao.textContent = "";
         elementoHora.textContent = ""; 
         elementoIcone.src = "";
+        document.body.classList.remove("temanoite");
+       document.body.classList.add("temadia")
       return false;
     }
     const dados = await resposta.json();
@@ -22,6 +24,14 @@ const elementoHora = document.getElementById("hora-local");
     elementoCidade.textContent = dados.name;
     const descricaoCapitalizada = dados.weather[0].description.charAt(0).toUpperCase() + dados.weather[0].description.slice(1);
     elementoDescricao.textContent = descricaoCapitalizada;
+    const periodo = dados.weather[0].icon.slice(-1);
+    if(periodo  == 'n'){
+      document.body.classList.remove("temadia");
+      document.body.classList.add("temanoite");
+    } else {
+      document.body.classList.remove("temanoite");
+      document.body.classList.add("temadia");
+    }
     elementoIcone.src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + "@2x.png";
     const tempoLocalMs = Date.now() + (dados.timezone * 1000);
 const dataLocal = new Date(tempoLocalMs);
