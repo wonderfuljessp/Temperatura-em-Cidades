@@ -9,8 +9,7 @@ const elementoHora = document.getElementById("hora-local");
 
   async function buscarClima() {
     const resposta = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + inputCidade.value + "&appid=" + CHAVE_API + "&lang=pt_br");
-    const dados = await resposta.json();
-    if(resposta.ok === false) {
+     if(resposta.ok === false) {
         elementoTemperatura.textContent = "Cidade não encontrada";
         elementoCidade.textContent = "";
         elementoDescricao.textContent = "";
@@ -18,6 +17,7 @@ const elementoHora = document.getElementById("hora-local");
         elementoIcone.src = "";
       return false;
     }
+    const dados = await resposta.json();
     elementoTemperatura.textContent = Math.round((dados.main.temp - 273.15)) + "ºC";
     elementoCidade.textContent = dados.name;
     const descricaoCapitalizada = dados.weather[0].description.charAt(0).toUpperCase() + dados.weather[0].description.slice(1);
