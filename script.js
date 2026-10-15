@@ -32,9 +32,11 @@ const elementoVento = document.getElementById("vento");
     if(periodo  == 'n'){
       document.body.classList.remove("temadia");
       document.body.classList.add("temanoite");
+      elementoIcone.style.display = "block";
     } else {
       document.body.classList.remove("temanoite");
       document.body.classList.add("temadia");
+      elementoIcone.style.display = "block";
     }
     elementoIcone.src = "https://openweathermap.org/img/wn/" + dados.weather[0].icon + "@2x.png";
     const tempoLocalMs = Date.now() + (dados.timezone * 1000);
