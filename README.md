@@ -1,4 +1,4 @@
-## TEMPERATURAS AO REDOR DO MUNDO
+## SOBRE O PROJETO
 Uma aplicação web que consome uma API para fornecer informações em tempo real sobre a temperatura, umidade do ar e velocidade do vento em diversas cidades do mundo.
 ## TECNOLOGIAS UTILIZADAS
 Node.js, TypeScript, HTML/CSS, OpenWeather API.
