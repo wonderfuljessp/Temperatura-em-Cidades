@@ -12,6 +12,6 @@ Este projeto foi desenvolvido inicialmente em JavaScript e, posteriormente, migr
 **Configurar a Chave da API:**
 Crie um ficheiro chamado config.js na raiz do projeto e adicione a sua chave da OpenWeather. O conteúdo do arquivo deve ser:
 const CHAVE_API = "suachavedaapi";
-** Executar a aplicação:**
+**Executar a aplicação:**
 Abra o ficheiro index.html no seu navegador (ou utilize a extensão Live Server no VS Code).
 
