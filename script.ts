@@ -33,6 +33,7 @@ interface DadosClima {
         elementoDescricao.textContent = "";
         elementoHora.textContent = ""; 
         elementoIcone.src = "";
+        elementoIcone.style.display = "none";
         elementoUmidade.textContent = "";
         elementoVento.textContent = "";
         document.body.classList.remove("temanoite");
