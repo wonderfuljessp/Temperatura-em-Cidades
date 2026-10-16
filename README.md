@@ -9,9 +9,11 @@ Este projeto foi desenvolvido inicialmente em JavaScript e, posteriormente, migr
 *   **Interação Intuitiva:** A pesquisa pode ser acionada tanto pelo clique no botão de lupa quanto pressionando a tecla `Enter` no teclado.
 *   **Interface Dinâmica:** Os ícones meteorológicos na página mudam automaticamente para refletir o clima em tempo real da cidade selecionada.
 ## COMO EXECUTAR O PROJETO
+
 **Configurar a Chave da API:**
 Crie um ficheiro chamado config.js na raiz do projeto e adicione a sua chave da OpenWeather. O conteúdo do arquivo deve ser:
 const CHAVE_API = "suachavedaapi";
+
 **Executar a aplicação:**
 Abra o ficheiro index.html no seu navegador (ou utilize a extensão Live Server no VS Code).
 
