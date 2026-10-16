@@ -3,9 +3,24 @@ Uma aplicação web que consome uma API para fornecer informações em tempo rea
 ## TECNOLOGIAS UTILIZADAS
 Node.js, TypeScript, HTML/CSS, OpenWeather API.
 ## EVOLUÇÃO TÉCNICA
-Este projeto foi desenvolvido inicialmente em JavaScript e, posteriormente, migrado para **TypeScript**. Esta refatoração teve como objetivo garantir uma base de código mais estruturada, previsível e segura.
+Este projeto foi desenvolvido inicialmente em JavaScript e, posteriormente, migrado para TypeScript. Esta refatoração teve como objetivo garantir uma base de código mais estruturada, previsível e segura.
 ## FUNCIONALIDADES
 *   **Busca Global:** O utilizador pode digitar e pesquisar as condições climáticas de qualquer cidade.
 *   **Interação Intuitiva:** A pesquisa pode ser acionada tanto pelo clique no botão de lupa quanto pressionando a tecla `Enter` no teclado.
 *   **Interface Dinâmica:** Os ícones meteorológicos na página mudam automaticamente para refletir o clima em tempo real da cidade selecionada.
+## COMO EXECUTAR O PROJETO
+
+**Clonar o meu repositório**
+Execute o seguinte comando no terminal: `git clone https://github.com/wonderfuljessp/Temperatura-em-Cidades.git`
+Use `cd Temperatura-em-Cidades` também no terminal para certificar-se de que está acessando a pasta correta no seu computador após a clonagem.
+
+**Configurar a Chave da API:**
+Crie um ficheiro chamado `config.js` na raiz do projeto e adicione a sua chave da OpenWeather. O conteúdo do arquivo deve ser:
+`const CHAVE_API = "suachavedaapi";`
+
+**Compilar o código**
+Execute o comando `tsc` no terminal.
+
+**Executar a aplicação:**
+Abra o ficheiro `index.html` no seu navegador (ou utilize a extensão Live Server no VS Code).
 
