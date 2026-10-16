@@ -3,7 +3,7 @@ Uma aplicação web que consome uma API para fornecer informações em tempo rea
 ## TECNOLOGIAS UTILIZADAS
 Node.js, TypeScript, HTML/CSS, OpenWeather API.
 ## EVOLUÇÃO TÉCNICA
-Este projeto foi desenvolvido inicialmente em JavaScript e, posteriormente, migrado para TypeScript. Esta refatoração teve como objetivo garantir uma base de código mais estruturada, previsível e segura.
+Este projeto foi desenvolvido inicialmente em JavaScript e, posteriormente, migrado para **TypeScript**. Esta refatoração teve como objetivo garantir uma base de código mais estruturada, previsível e segura.
 ## FUNCIONALIDADES
 *   **Busca Global:** O utilizador pode digitar e pesquisar as condições climáticas de qualquer cidade.
 *   **Interação Intuitiva:** A pesquisa pode ser acionada tanto pelo clique no botão de lupa quanto pressionando a tecla `Enter` no teclado.
