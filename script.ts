@@ -32,7 +32,6 @@ interface DadosClima {
         elementoCidade.textContent = "";
         elementoDescricao.textContent = "";
         elementoHora.textContent = ""; 
-        elementoIcone.src = "";
         elementoIcone.style.display = "none";
         elementoUmidade.textContent = "";
         elementoVento.textContent = "";
